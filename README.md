@@ -4,7 +4,7 @@
  * @Author: Shaojie Tan
  * @Date: 2021-09-05 10:46:12
  * @LastEditors: Shaojie Tan
- * @LastEditTime: 2021-09-05 21:56:56
+ * @LastEditTime: 2021-09-05 23:06:09
 -->
 
 <p align="center">
@@ -15,9 +15,9 @@
 
 <!-- https://shields.io/category/build -->
 
-[![Ubuntu unit](https://github.com/QuEST-Kit/QuEST/workflows/Ubuntu%20unit/badge.svg?branch=develop)](https://github.com/QuEST-Kit/QuEST/actions)
-[![macOS unit](https://github.com/QuEST-Kit/QuEST/workflows/macOS%20unit/badge.svg)](https://github.com/QuEST-Kit/QuEST/actions)
-[![LLVM](https://github.com/QuEST-Kit/QuEST/workflows/LLVM%20asan/badge.svg)](https://github.com/QuEST-Kit/QuEST/actions)
+[![CMake](https://github.com/Kirrito-k423/githubTemplate/actions/workflows/cmake.yml/badge.svg)](https://github.com/Kirrito-k423/githubTemplate/actions/workflows/cmake.yml)
+<!-- [![macOS unit](https://github.com/QuEST-Kit/QuEST/workflows/macOS%20unit/badge.svg)](https://github.com/QuEST-Kit/QuEST/actions)
+[![LLVM](https://github.com/QuEST-Kit/QuEST/workflows/LLVM%20asan/badge.svg)](https://github.com/QuEST-Kit/QuEST/actions) -->
 
 [![codecov](https://codecov.io/gh/QuEST-Kit/QuEST/branch/develop/graph/badge.svg)](https://codecov.io/gh/QuEST-Kit/QuEST)
 
@@ -67,7 +67,7 @@ then run it with
 ## Project Structure
 
 ## Git auto-release requirements
-1. travis-ci
+1. github Actions / travis-ci
    1. 自动化测试
 2. Commitizen / Visual Studio Code Commitizen Support
    1. 规范commit message

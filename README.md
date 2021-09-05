@@ -4,7 +4,7 @@
  * @Author: Shaojie Tan
  * @Date: 2021-09-05 10:46:12
  * @LastEditors: Shaojie Tan
- * @LastEditTime: 2021-09-05 16:49:40
+ * @LastEditTime: 2021-09-05 21:56:56
 -->
 
 <p align="center">
@@ -23,7 +23,7 @@
 
 [![GitHub release](https://img.shields.io/github/release/QuEST-Kit/QuEST)](https://GitHub.com/QuEST-Kit/QuEST/releases/) 
 [![Doc](https://img.shields.io/badge/doc-Github.io-orange.svg)](https://quest-kit.github.io/QuEST/modules.html)
-[![unit tests](https://action-badges.now.sh/QuEST-Kit/QuEST)](https://github.com/QuEST-Kit/QuEST/actions)
+[![Build Status](https://app.travis-ci.com/Kirrito-k423/githubTemplate.svg?branch=main)](https://app.travis-ci.com/Kirrito-k423/githubTemplate)
 [![MIT license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](LICENCE.txt)
 
 <!-- [![Languages](https://img.shields.io/badge/C-99-ff69b4.svg)](http://www.open-std.org/jtc1/sc22/wg14/www/standards.html#9899) -->

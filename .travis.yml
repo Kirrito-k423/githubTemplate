@@ -1,0 +1,47 @@
+# language: node_js
+# node_js:
+# - lts/*
+# env:
+# - API_SERVER=https://easy-mock.com/mock/5c1b3895fe5907404e654045/femessage-mock PUBLIC_PATH=http://levy.work/nuxt-element-dashboard/
+# # 默认是yarn, 如果有yarn.lock的话
+# install:
+# - yarn
+# # 默认是 yarn test
+# script:
+# - yarn build
+# cache: yarn
+# deploy:
+#   provider: pages
+#   skip-cleanup: true
+#   keep-history: true
+#   local-dir: dist
+#   on:
+#     branch: master
+#   github-token: $GITHUB_TOKEN
+
+language: cpp
+sudo: required
+dist: bionic # Ubuntu 18.04 with gcc 7.4.0 / Clang 7 / CMake 3.12.4
+compiler:
+- gcc
+- clang
+os:
+- linux
+before_install: true
+install: true
+script: 
+- ./scripts/build.sh
+- ./scripts/run.sh
+after_success: true
+branches:
+  only:
+  - master
+notifications:
+  email: 
+    recipients:
+      - 943648187@qq.com
+    on_success: never # default: change
+    on_failure: always # default: always
+env:
+  global:
+    - OMP_NUM_THREADS=4

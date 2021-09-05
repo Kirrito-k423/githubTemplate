@@ -4,7 +4,7 @@
  * @Author: Shaojie Tan
  * @Date: 2021-09-05 10:46:12
  * @LastEditors: Shaojie Tan
- * @LastEditTime: 2021-09-05 15:37:14
+ * @LastEditTime: 2021-09-05 16:49:40
 -->
 
 <p align="center">
@@ -66,8 +66,15 @@ then run it with
 
 ## Project Structure
 
-
-
+## Git auto-release requirements
+1. travis-ci
+   1. 自动化测试
+2. Commitizen / Visual Studio Code Commitizen Support
+   1. 规范commit message
+3. standard-version
+   1. 更新 package 版本并打 tag
+4. github-release-notes
+   1. 生成 release-log
 ## Acknowledgements
 
 We sincerely thank the following external contributors to the Project.

@@ -19,8 +19,8 @@ cmake_minimum_required(VERSION 3.0.0)
 
 # compiler followed close behind by version
 # set(CMAKE_SYSTEM_NAME Linux)
-set(CMAKE_C_COMPILER "icc")
-set(CMAKE_CXX_COMPILER "icpc")
+# set(CMAKE_C_COMPILER "icc")
+# set(CMAKE_CXX_COMPILER "icpc")
 
 # more error message
 SET( CMAKE_VERBOSE_MAKEFILE on  )

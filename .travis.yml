@@ -3,7 +3,7 @@ sudo: required
 dist: bionic # Ubuntu 18.04 with gcc 7.4.0 / Clang 7 / CMake 3.12.4
 compiler:
 - gcc
-- clang
+# - clang
 os:
 - linux
 before_install: true

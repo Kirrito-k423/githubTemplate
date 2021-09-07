@@ -14,7 +14,8 @@ addons:
     packages: lcov
 
 
-before_install: true
+before_install: 
+- ./scripts/env.sh
 install:
 # (fake) install dependencies (usually involves wget, configure, make, ...)
 # install into cache folder (build binaries+headers only, no sources and do NOT build there)

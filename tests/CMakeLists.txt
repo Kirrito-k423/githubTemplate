@@ -1,3 +1,7 @@
+set(Boost_USE_STATIC_LIBS ON)
+set(Boost_DEBUG ON)
+
+
 find_package(Boost COMPONENTS system filesystem unit_test_framework REQUIRED)
  
 include_directories(include ${Boost_INCLUDE_DIRS}/boost)

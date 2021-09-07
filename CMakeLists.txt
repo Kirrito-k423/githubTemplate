@@ -31,6 +31,7 @@ PROJECT(ipcc_test1)
 option(MULTITHREADED "Switches on OpenMP Threading if an OpenMP implementation can be found. Set to 0 to disable." 1)
 option(DISTRIBUTED "Whether the program will be run in distributed mode using MPI. Set to 1 to enable" 0)
 option(COMPILEALL "Whether to COMPILE ALL" 1)
+option(CODE_COVERAGE "Enable coverage reporting" OFF)
 set(COMPILESINGLE "SLIC.cpp" CACHE STRING "Whether to COMPILE ALL")
 set(CMAKE_BUILD_TYPE "Release" CACHE STRING "Which build type")
 
@@ -79,6 +80,15 @@ endif()
 # set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O3 ")
 # set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 ")
 # add_compile_options(-std=c++11)
+
+if (CODE_COVERAGE)
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} \
+        --coverage"
+    )
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} \
+        --coverage"
+    )
+endif()
 
 # ----- C COMPILER FLAGS --------------------------------------------------
 

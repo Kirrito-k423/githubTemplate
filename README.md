@@ -4,7 +4,7 @@
  * @Author: Shaojie Tan
  * @Date: 2021-09-05 10:46:12
  * @LastEditors: Shaojie Tan
- * @LastEditTime: 2021-09-07 10:28:31
+ * @LastEditTime: 2021-09-07 11:33:33
 -->
 
 <p align="center">
@@ -20,7 +20,7 @@
 [![LLVM](https://github.com/QuEST-Kit/QuEST/workflows/LLVM%20asan/badge.svg)](https://github.com/QuEST-Kit/QuEST/actions) -->
 
 [![CMake](https://github.com/Kirrito-k423/githubTemplate/actions/workflows/cmake.yml/badge.svg)](https://github.com/Kirrito-k423/githubTemplate/actions/workflows/cmake.yml)
-[![codecov](https://codecov.io/gh/QuEST-Kit/QuEST/branch/develop/graph/badge.svg)](https://codecov.io/gh/QuEST-Kit/QuEST)
+[![codecov](https://codecov.io/gh/Kirrito-k423/githubTemplate/branch/main/graph/badge.svg?token=CDR3YJNNHB)](https://codecov.io/gh/Kirrito-k423/githubTemplate)
 
 [![GitHub release](https://img.shields.io/github/release/Kirrito-k423/githubTemplate)](https://github.com/Kirrito-k423/githubTemplate/releases) 
 [![Doc](https://img.shields.io/badge/doc-Github.io-orange.svg)](https://quest-kit.github.io/QuEST/modules.html)

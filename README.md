@@ -4,7 +4,7 @@
  * @Author: Shaojie Tan
  * @Date: 2021-09-05 10:46:12
  * @LastEditors: Shaojie Tan
- * @LastEditTime: 2021-09-05 23:06:09
+ * @LastEditTime: 2021-09-07 10:28:31
 -->
 
 <p align="center">
@@ -15,13 +15,14 @@
 
 <!-- https://shields.io/category/build -->
 
-[![CMake](https://github.com/Kirrito-k423/githubTemplate/actions/workflows/cmake.yml/badge.svg)](https://github.com/Kirrito-k423/githubTemplate/actions/workflows/cmake.yml)
+
 <!-- [![macOS unit](https://github.com/QuEST-Kit/QuEST/workflows/macOS%20unit/badge.svg)](https://github.com/QuEST-Kit/QuEST/actions)
 [![LLVM](https://github.com/QuEST-Kit/QuEST/workflows/LLVM%20asan/badge.svg)](https://github.com/QuEST-Kit/QuEST/actions) -->
 
+[![CMake](https://github.com/Kirrito-k423/githubTemplate/actions/workflows/cmake.yml/badge.svg)](https://github.com/Kirrito-k423/githubTemplate/actions/workflows/cmake.yml)
 [![codecov](https://codecov.io/gh/QuEST-Kit/QuEST/branch/develop/graph/badge.svg)](https://codecov.io/gh/QuEST-Kit/QuEST)
 
-[![GitHub release](https://img.shields.io/github/release/QuEST-Kit/QuEST)](https://GitHub.com/QuEST-Kit/QuEST/releases/) 
+[![GitHub release](https://img.shields.io/github/release/Kirrito-k423/githubTemplate)](https://github.com/Kirrito-k423/githubTemplate/releases) 
 [![Doc](https://img.shields.io/badge/doc-Github.io-orange.svg)](https://quest-kit.github.io/QuEST/modules.html)
 [![Build Status](https://app.travis-ci.com/Kirrito-k423/githubTemplate.svg?branch=main)](https://app.travis-ci.com/Kirrito-k423/githubTemplate)
 [![MIT license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](LICENCE.txt)

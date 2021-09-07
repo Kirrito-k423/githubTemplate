@@ -6,12 +6,30 @@ compiler:
 # - clang
 os:
 - linux
+cache: # see https://docs.travis-ci.com/user/caching/ for lcov
+- directories:
+  - $HOME/.cache
+addons:
+  apt:
+    packages: lcov
+
+
 before_install: true
-install: true
+install:
+# (fake) install dependencies (usually involves wget, configure, make, ...)
+# install into cache folder (build binaries+headers only, no sources and do NOT build there)
+- mkdir -p $HOME/.cache
+- touch $HOME/.cache/mydependency.so
 script: 
 - ./scripts/build.sh
 - ./scripts/run.sh
-after_success: true
+after_success:
+# Create lcov report
+- lcov --capture --directory . --output-file coverage.info
+- lcov --remove coverage.info '/usr/*' --output-file coverage.info # filter system-files
+- lcov --list coverage.info # debug info
+# Uploading report to CodeCov
+- bash <(curl -s https://codecov.io/bash) -f coverage.info || echo "Codecov did not collect coverage reports"
 branches:
   only:
   - main

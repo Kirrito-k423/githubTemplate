@@ -250,6 +250,13 @@ else()
     ADD_EXECUTABLE(${program} ${SRC_DIR}/${COMPILESINGLE})
 endif()
 
+# ----- TESTS ----------------------------------------------------------------
+# https://www.cnblogs.com/457220157-FTD/p/4139149.html
 
+add_library(sqr STATIC src/lib/sqr.cpp)
+
+add_subdirectory(tests)
+enable_testing()
+add_test(NAME mytest COMMAND Test)
 
 

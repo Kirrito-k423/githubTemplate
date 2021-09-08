@@ -5,7 +5,7 @@
  # @Author: Shaojie Tan
  # @Date: 2021-09-07 22:41:26
  # @LastEditors: Shaojie Tan
- # @LastEditTime: 2021-09-08 22:30:10
+ # @LastEditTime: 2021-09-08 22:33:14
 ### 
 
 set -e
@@ -26,7 +26,7 @@ cd /usr/local
 ls
 echo "--------------------------------2"
 cd /usr/include
-ls |grep oo
+ls
 echo "--------------------------------3"
 cd /usr/include
 ls

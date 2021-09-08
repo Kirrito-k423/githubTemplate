@@ -16,9 +16,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: install Boost for cmake
-        run: |
-          sudo apt-get install libboost-all-dev
-          sudo apt-get install aptitude
+      run: |
+        sudo apt-get install libboost-all-dev
+        sudo apt-get install aptitude
   build:
     # The CMake configure and build commands are platform agnostic and should work equally
     # well on Windows or Mac.  You can convert this to a matrix build if you need

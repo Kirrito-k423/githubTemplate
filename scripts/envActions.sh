@@ -5,7 +5,7 @@
  # @Author: Shaojie Tan
  # @Date: 2021-09-07 22:41:26
  # @LastEditors: Shaojie Tan
- # @LastEditTime: 2021-09-08 22:33:14
+ # @LastEditTime: 2021-09-08 22:39:11
 ### 
 
 set -e
@@ -17,15 +17,14 @@ echo $BOOST_LIBRARYDIR
 echo $BOOST_ROOT
 cd /
 ls
+echo "--------------------------------0"
 cd /usr/
 ls
+echo "--------------------------------1"
 cd /usr/src
 ls
-echo "--------------------------------1"
-cd /usr/local
-ls
 echo "--------------------------------2"
-cd /usr/include
+cd /usr/local
 ls
 echo "--------------------------------3"
 cd /usr/include

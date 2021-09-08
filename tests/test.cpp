@@ -4,7 +4,7 @@
  * @Author: Shaojie Tan
  * @Date: 2021-09-07 12:49:14
  * @LastEditors: Shaojie Tan
- * @LastEditTime: 2021-09-08 23:08:41
+ * @LastEditTime: 2021-09-08 23:11:05
  */
 //test.cpp
 #include "sqr.h"
@@ -12,6 +12,7 @@
 #include <boost/test/unit_test.hpp>
  
 
+int add( int i, int j ) { return i+j; }
 BOOST_AUTO_TEST_SUITE(yahaha) //把"TEST_CASE"包起来
     BOOST_AUTO_TEST_CASE( test_case1 )
     {
@@ -31,7 +32,7 @@ BOOST_AUTO_TEST_SUITE(yahaha) //把"TEST_CASE"包起来
     BOOST_AUTO_TEST_CASE( test_case2 )
     {
         BOOST_REQUIRE_EQUAL( 2, 2 );  // note: REQUIRE
-         if( add( 2,2 ) != 4 )
+        if( add( 2,2 ) != 4 )
             BOOST_ERROR( "Ouch..." );            // #3 continues on error
         
         if( add( 2,2 ) != 4 )

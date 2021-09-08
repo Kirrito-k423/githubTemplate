@@ -5,7 +5,7 @@
  # @Author: Shaojie Tan
  # @Date: 2021-09-07 22:41:26
  # @LastEditors: Shaojie Tan
- # @LastEditTime: 2021-09-08 11:01:55
+ # @LastEditTime: 2021-09-08 11:32:30
 ### 
 
 set -e
@@ -19,11 +19,11 @@ echo $Boost_ROOT
 cd /
 ls
 cd /usr/
-ls |grep oo
+ls
 cd /usr/bin
-ls |grep oo
+ls
 cd /usr/local
-ls |grep oo
+ls
 cd /usr/local/include
 ls |grep oo
 cd /usr/local/lib

@@ -5,7 +5,7 @@
  # @Author: Shaojie Tan
  # @Date: 2021-09-07 22:41:26
  # @LastEditors: Shaojie Tan
- # @LastEditTime: 2021-09-08 11:32:30
+ # @LastEditTime: 2021-09-08 11:43:00
 ### 
 
 set -e
@@ -21,11 +21,13 @@ ls
 cd /usr/
 ls
 cd /usr/bin
-ls
+ls |grep oo
 cd /usr/local
 ls
-cd /usr/local/include
+cd /usr/include
 ls |grep oo
+cd /usr/local/include
+ls
 cd /usr/local/lib
 ls |grep oo
 echo $PATH

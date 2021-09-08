@@ -5,7 +5,7 @@
  # @Author: Shaojie Tan
  # @Date: 2021-09-07 22:41:26
  # @LastEditors: Shaojie Tan
- # @LastEditTime: 2021-09-08 10:41:58
+ # @LastEditTime: 2021-09-08 11:01:55
 ### 
 
 set -e
@@ -18,7 +18,11 @@ echo $Boost_LIBRARYDIR
 echo $Boost_ROOT
 cd /
 ls
+cd /usr/
+ls |grep oo
 cd /usr/bin
+ls |grep oo
+cd /usr/local
 ls |grep oo
 cd /usr/local/include
 ls |grep oo

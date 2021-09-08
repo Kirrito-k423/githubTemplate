@@ -19,6 +19,13 @@ jobs:
       run: |
         sudo apt-get install libboost-all-dev
         sudo apt-get install aptitude
+  envTest:
+    runs-on: ubuntu-latest
+    needs: envInstall
+    steps:
+    - uses: actions/checkout@v2
+    - name: check Boost path
+      run: ${{github.workspace}}/scripts/env.sh
   build:
     # The CMake configure and build commands are platform agnostic and should work equally
     # well on Windows or Mac.  You can convert this to a matrix build if you need

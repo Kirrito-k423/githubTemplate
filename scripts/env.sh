@@ -5,7 +5,7 @@
  # @Author: Shaojie Tan
  # @Date: 2021-09-07 22:41:26
  # @LastEditors: Shaojie Tan
- # @LastEditTime: 2021-09-08 12:11:13
+ # @LastEditTime: 2021-09-08 22:00:41
 ### 
 
 set -e
@@ -20,13 +20,17 @@ cd /
 ls
 cd /usr/
 ls
-cd /usr/bin
-ls |grep oo
+cd /usr/src
+ls
 cd /usr/local
 ls
 cd /usr/include
 ls |grep oo
+cd /usr/include/boost/
+ls
 cd /usr/local/include
+ls
+cd /usr/local/src
 ls
 cd /usr/local/lib
 ls

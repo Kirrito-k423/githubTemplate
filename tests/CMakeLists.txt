@@ -1,16 +1,19 @@
 message("-- TESTS -- " )
-set(Boost_USE_STATIC_LIBS ON)
+
 set(Boost_DEBUG ON)
-# set(Boost_ROOT /usr/local/src/boost_1_46_1)
+set(Boost_ROOT /usr/)
 # set(Boost_INCLUDE_DIR /usr/local/src/boost_1_46_1)
 # set(Boost_LIBRARY_DIR /usr/local/src/boost_1_46_1/stage/lib)
 message("boost lib: ${Boost_LIBRARIES}")
-message("boost inc:${Boost_INCLUDE_DIR}")
+message("boost inc:${Boost_INCLUDE_DIRS}")
 
-find_package(Boost COMPONENTS system filesystem unit_test_framework REQUIRED)
- 
+find_package(Boost 1.65.1 COMPONENTS system filesystem unit_test_framework REQUIRED)
+
+message("boost lib: ${Boost_LIBRARIES}")
+message("boost inc:${Boost_INCLUDE_DIRS}")
 include_directories(include ${Boost_INCLUDE_DIRS}/boost)
  
+# set(Boost_USE_STATIC_LIBS ON)
 add_definitions(-DBOOST_TEST_DYN_LINK -g)
 add_executable(Test test.cpp)
  

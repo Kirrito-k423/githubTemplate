@@ -4,7 +4,7 @@
  * @Author: Shaojie Tan
  * @Date: 2021-09-07 12:49:14
  * @LastEditors: Shaojie Tan
- * @LastEditTime: 2021-09-08 23:04:23
+ * @LastEditTime: 2021-09-08 23:08:41
  */
 //test.cpp
 #include "sqr.h"
@@ -31,7 +31,16 @@ BOOST_AUTO_TEST_SUITE(yahaha) //把"TEST_CASE"包起来
     BOOST_AUTO_TEST_CASE( test_case2 )
     {
         BOOST_REQUIRE_EQUAL( 2, 2 );  // note: REQUIRE
-        BOOST_FAIL( "Should never reach this line" );
+         if( add( 2,2 ) != 4 )
+            BOOST_ERROR( "Ouch..." );            // #3 continues on error
+        
+        if( add( 2,2 ) != 4 )
+            BOOST_FAIL( "Should never reach this line" );             // #4 throws on error
+    
+        if( add( 2,2 ) != 4 ) throw "Ouch..."; // #5 throws on error
+    
+        BOOST_CHECK_MESSAGE( add( 2,2 ) == 4,  // #6 continues on error
+                            "add(..) result: " << add( 2,2 ) );
     }
 
 

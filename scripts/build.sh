@@ -5,7 +5,7 @@
  # @Author: Shaojie Tan
  # @Date: 2021-09-05 21:07:13
  # @LastEditors: Shaojie Tan
- # @LastEditTime: 2021-09-07 22:43:37
+ # @LastEditTime: 2021-09-08 22:49:50
 ### 
 # c++ travis CI
 set -e
@@ -18,7 +18,7 @@ cmake $@ -DCODE_COVERAGE=ON ..
 # cmake --build . --config Debug -- -j $(nproc)
 make
 # Test
-# ctest -j $(nproc) --output-on-failure
+ctest -j $(nproc) --output-on-failure
 
 
 

@@ -5,17 +5,17 @@
  # @Author: Shaojie Tan
  # @Date: 2021-09-07 22:41:26
  # @LastEditors: Shaojie Tan
- # @LastEditTime: 2021-09-08 22:00:41
+ # @LastEditTime: 2021-09-08 22:15:29
 ### 
 
 set -e
 set -v
 lscpu
 pwd
-aptitude search boost
-echo $Boost_INCLUDE_DIR
-echo $Boost_LIBRARYDIR
-echo $Boost_ROOT
+#aptitude search boost
+echo $BOOST_INCLUDE_DIR
+echo $BOOST_LIBRARYDIR
+echo $BOOST_ROOT
 cd /
 ls
 cd /usr/

@@ -1,7 +1,7 @@
 message("-- TESTS -- " )
 
 set(Boost_DEBUG ON)
-set(BOOST_ROOT /usr/)
+set(BOOST_ROOT /usr)
 # set(Boost_INCLUDE_DIR /usr/local/src/boost_1_46_1)
 # set(Boost_LIBRARY_DIR /usr/local/src/boost_1_46_1/stage/lib)
 message("boost lib: ${Boost_LIBRARIES}")

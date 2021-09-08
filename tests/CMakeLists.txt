@@ -1,6 +1,11 @@
+message("-- TESTS -- " )
 set(Boost_USE_STATIC_LIBS ON)
 set(Boost_DEBUG ON)
-
+# set(Boost_ROOT /usr/local/src/boost_1_46_1)
+# set(Boost_INCLUDE_DIR /usr/local/src/boost_1_46_1)
+# set(Boost_LIBRARY_DIR /usr/local/src/boost_1_46_1/stage/lib)
+message("boost lib: ${Boost_LIBRARIES}")
+message("boost inc:${Boost_INCLUDE_DIR}")
 
 find_package(Boost COMPONENTS system filesystem unit_test_framework REQUIRED)
  

@@ -11,10 +11,15 @@ cache: # see https://docs.travis-ci.com/user/caching/ for lcov
   - $HOME/.cache
 addons:
   apt:
-    packages: lcov
+    packages: 
+    - lcov
+    - libboost-all-dev
+    - aptitude
 
 
 before_install: 
+- sudo apt-get install libboost-all-dev
+- sudo apt-get install aptitude
 - ./scripts/env.sh
 install:
 # (fake) install dependencies (usually involves wget, configure, make, ...)

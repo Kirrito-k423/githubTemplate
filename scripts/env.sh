@@ -5,7 +5,7 @@
  # @Author: Shaojie Tan
  # @Date: 2021-09-07 22:41:26
  # @LastEditors: Shaojie Tan
- # @LastEditTime: 2021-09-08 11:43:00
+ # @LastEditTime: 2021-09-08 12:11:13
 ### 
 
 set -e
@@ -29,7 +29,7 @@ ls |grep oo
 cd /usr/local/include
 ls
 cd /usr/local/lib
-ls |grep oo
+ls
 echo $PATH
 echo $CXX_INCLUDE_PATH
 echo $CXX_LIBRARY_PATH

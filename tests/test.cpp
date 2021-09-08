@@ -4,22 +4,43 @@
  * @Author: Shaojie Tan
  * @Date: 2021-09-07 12:49:14
  * @LastEditors: Shaojie Tan
- * @LastEditTime: 2021-09-07 12:51:41
+ * @LastEditTime: 2021-09-08 23:04:23
  */
 //test.cpp
 #include "sqr.h"
-#define BOOST_TEST_MODULE SqrTests
+#define BOOST_TEST_MODULE SqrTests //定义测试模块
 #include <boost/test/unit_test.hpp>
  
- 
- 
-BOOST_AUTO_TEST_CASE(FailTest)
-{
-    BOOST_CHECK_EQUAL(5, sqr(2));
-}
- 
- 
-BOOST_AUTO_TEST_CASE(PassTest)
-{
-    BOOST_CHECK_EQUAL(4, sqr(2));
-}
+
+BOOST_AUTO_TEST_SUITE(yahaha) //把"TEST_CASE"包起来
+    BOOST_AUTO_TEST_CASE( test_case1 )
+    {
+        BOOST_WARN( sizeof(int) < 4 );
+    }
+    BOOST_AUTO_TEST_CASE(FailTest)
+    {
+        BOOST_CHECK_EQUAL(4, sqr(2)); //“CHECK"与"REQUIRE"差别为：前者即使失败，也仍然继续；后者则认为是必须的，为严重错误，直接退出当前测试。
+    }
+    
+    
+    BOOST_AUTO_TEST_CASE(PassTest)
+    {
+        BOOST_CHECK_EQUAL(4, sqr(2));
+    }
+
+    BOOST_AUTO_TEST_CASE( test_case2 )
+    {
+        BOOST_REQUIRE_EQUAL( 2, 2 );  // note: REQUIRE
+        BOOST_FAIL( "Should never reach this line" );
+    }
+
+
+BOOST_AUTO_TEST_SUITE_END()
+
+
+BOOST_AUTO_TEST_SUITE( test_suite2 )
+    BOOST_AUTO_TEST_CASE( test_case3 )
+    {
+        BOOST_CHECK( true );
+    }
+BOOST_AUTO_TEST_SUITE_END()

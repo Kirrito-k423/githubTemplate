@@ -4,7 +4,7 @@
  * @Author: Shaojie Tan
  * @Date: 2021-09-05 10:46:12
  * @LastEditors: Shaojie Tan
- * @LastEditTime: 2021-09-07 11:33:33
+ * @LastEditTime: 2021-09-09 15:45:28
 -->
 
 <p align="center">
@@ -70,6 +70,7 @@ then run it with
 ## Git auto-release requirements
 1. github Actions / travis-ci
    1. 自动化测试
+   2. 生成README标签
 2. Commitizen / Visual Studio Code Commitizen Support
    1. 规范commit message
 3. standard-version
